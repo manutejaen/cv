@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuel Martínez Marín</title>
+    <link rel="shortcut icon" type="image/ico" href="img/icons/satellite.ico"/>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="css/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- My Styles-->
+    <link href="css/main.css" rel="stylesheet" />
+
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-mdb-toggle="collapse"
+          data-mdb-target="#navbarLeftAlignExample"
+          aria-controls="navbarLeftAlignExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+          <a class="navbar-brand" href="#">
+            <img src="img/mamm_logo.png" width="50px" height="50px" alt="">
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active ripple" aria-current="page" href="#"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ripple" href="#sobremi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ripple" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ripple" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ripple" href="#estudios">Estudios</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+
+    <!-- Background image -->
+    <div
+      id="intro"
+      class="parallax p-5 text-center bg-image"
+      style="background-image: url('img/IMG_2371_clipped.JPG')"
+    >
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-white">
+            <h1 class="mb-3">Soy Manuel Martínez Marín</h1>
+            <h4 class="mb-3">Analista GIS y desarrollador Full-Stack</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Background image -->
+
+    <section id="sobremi" style="width: 60%">
+      <div class="row animate" style="opacity: 0">
+        <div class="col-md align-self-center">
+          <div class="img-wrap">
+            <img
+              class="img-fluid"
+              src="img/dots2.png"
+              style="
+                min-width: 100px;
+                max-height: 150px;
+                position: absolute;
+                transform: translate(130%, -40%);
+                z-index: -100;
+              "
+            />
+          </div>
+          <img
+            src="img/IMG-20160906-WA0008.jpg"
+            class="img-fluid"
+            alt="..."
+            style="min-width: 250px; max-height: 400px; float: left"
+          />
+        </div>
+        <div class="col-md-8 mt-4 align-self-center">
+          <h2>Sobre mí</h2>
+          <br />
+          <p>
+            Llevo ya unos años programando en el mundo de la cartografía y la
+            información geográfica. Y es que los mapas me permiten saciar la
+            parte creativa y visual, las ganas de transmitir y contar una
+            historia, la que se esconde detrás de los datos, así como saciar la
+            parte más ingenieril y desafiante a través de la programación
+            informática.<br /><br />
+            Casi todo lo que ocurre, ocurre en algún lugar, por lo que cualquier
+            evento puede ser llevado a un mapa, es aquí donde confluyen mi
+            vocación y la necesidad de las empresas de interpretar y visualizar
+            lo que ocurre en el mundo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Background image -->
+    <div
+      id="banner"
+      class="parallax p-5 text-center bg-image"
+      style="
+        background-image: url('img/world_connected_2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      "
+    ></div>
+    <!-- Background image -->
+
+    <section id="servicios">
+      <div class="row animate" style="opacity: 0">
+        <div class="col-12"><h1>Servicios</h1></div>
+        <div class="col-lg">
+          <div class="card">
+            <div
+              class="bg-image hover-overlay ripple"
+              data-mdb-ripple-color="light"
+            >
+              <img src="img/ScreenShot2.jpg" class="img-fluid" />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15)"
+                ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Visores de mapas</h5>
+              <p class="card-text">
+                Herramientas web personalizadas, acorde con las necesidades de
+                gestión y visualización.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=fSpdO-VF3gM"
+                target="_blank"
+                >Ver más</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg">
+          <div class="card">
+            <div
+              class="bg-image hover-overlay ripple"
+              data-mdb-ripple-color="light"
+            >
+              <img src="img/Overlay.jpg" class="img-fluid" />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15)"
+                ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">GIS</h5>
+              <p class="card-text">
+                Automatización de procesos, tratamiento de información
+                geográfica, diseño/gestión de bases de datos y administración de
+                servidores de mapas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg">
+          <div class="card">
+            <div
+              class="bg-image hover-overlay ripple"
+              data-mdb-ripple-color="light"
+            >
+              <img src="img/ML-workshop-690pxp.jpg" class="img-fluid" />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.15)"
+                ></div>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Earth Observation</h5>
+              <p class="card-text">
+                Experiencia en el campo de la fotogrametría y la teledetección.
+                Tratamiento y explotación de imágenes aéreas o de satélite
+                mediante algoritmos de machine learning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" style="width: 80%">
+      <div class="row animate" style="opacity: 0">
+        <div class="col-12"><h1>Experiencia</h1></div>
+        <div class="col-md-8">
+          <div id="mapid"></div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card"
+            style="
+              background-image: url(img/COTESA_clipped.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+            "
+          >
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">
+                Analista GIS y desarrollador
+              </h6>
+              <p class="card-text">COTESA (Marzo 2019 - Febrero 2021)</p>
+              <button onclick="panTo(41.51858936,-4.72176050, 20)" class="button-location"><i class="fas fa-map-marker-alt fa-m"></i>    Valladolid</button>
+              <a
+                href="https://www.youtube.com/watch?v=m5n-8dCd_mQ"
+                target="_blank"
+                class="card-link"
+                ><i class="fas fa-globe-europe fa-m"></i>    Web</a
+              >
+            </div>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url(img/deimos-2.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+            "
+          >
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Desarrollador</h6>
+              <p class="card-text">Deimos Imaging (Nov 2016 - Marzo 2019)</p>
+              <button onclick="panTo(41.51579880,-4.72126900, 20)" class="button-location"><i class="fas fa-map-marker-alt fa-m"></i>    Valladolid</button>
+              <a
+                href="https://www.deimos-imaging.com/"
+                target="_blank"
+                class="card-link"
+                ><i class="fas fa-globe-europe fa-m"></i> Web</a
+              >
+            </div>
+          </div>
+          <div
+            class="card"
+            style="
+              background-image: url(img/CRTM.png);
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
+            "
+          >
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">Desarrollador GIS</h6>
+              <p class="card-text">
+                Consorcio Regional de Transportes (May 2016 - Julio 2016)
+              </p>
+              <button onclick="panTo(40.4406433,-3.7002158, 20)" class="button-location"><i class="fas fa-map-marker-alt fa-m"></i>    Madrid</button>
+              <a
+                href="https://www.crtm.es/muevete-por-madrid.aspx"
+                target="_blank"
+                class="card-link"
+                ><i class="fas fa-globe-europe fa-m"></i>    Web</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="estudios"
+      class="col-12 parallax p-5 bg-image"
+      style="
+        background-image: url('img/studies_background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      "
+    >
+      <div class="row animate" style="opacity: 0">
+        <div class="col-12" style="color: rgb(255, 255, 255)">
+          <h1>Estudios</h1>
+        </div>
+        <div
+          class="card"
+          style="
+            background-image: url(img/esri.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+          "
+        >
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">
+              Master en Sistemas de información geográfica de ESRI España
+            </h6>
+            <p class="card-text">Madrid (Septiemnbre 2015 - Junio 2016)</p>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="
+            background-image: url(img/uja_logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+          "
+        >
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">
+              Ingeniería Superior en Geodesia y Cartografía
+            </h6>
+            <p class="card-text">
+              Universidad de Jaén (Septiembre 2011 - Junio 2015)
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="
+            background-image: url(img/uja_logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+          "
+        >
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">
+              Ingeniería Técnica en Topografía
+            </h6>
+            <p class="card-text">
+              Universidad de Jaén (Septiembre 2001 - Septiembre 2011)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="socialmedia">
+      <div class="row animate" style="opacity: 0">
+        <div class="col-12"><h1>Me on social media</h1></div>
+        <blockquote class="twitter-tweet tw-align-center">
+          <p lang="es" dir="ltr">
+            Manuel Martínez, Premio Fin de Máster. Hoy nos invita a copas! :)
+            ¡Felicidades!
+            <a
+              href="https://twitter.com/hashtag/Sesi%C3%B3nDeClausuraM%C3%A1sterGIS?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#SesiónDeClausuraMásterGIS</a
+            >
+            <a href="https://t.co/r9hpdEzShp">pic.twitter.com/r9hpdEzShp</a>
+          </p>
+          &mdash; Esri España (@Esri_Spain)
+          <a
+            href="https://twitter.com/Esri_Spain/status/746029973509668865?ref_src=twsrc%5Etfw"
+            >June 23, 2016</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <h6>¿Dónde estoy?</h6>
+        <!-- Linkedin -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          target="_blank"
+          style="background-color: #0082ca"
+          href="https://www.linkedin.com/in/manuelmartinezmarin3m/"
+          role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          target="_blank"
+          style="background-color: #333333"
+          href="https://github.com/manutejaen"
+          role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+        <!-- GitLab -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          target="_blank"
+          style="background-color: #e4640f"
+          href="https://gitlab.com/manutejaen"
+          role="button"
+          ><i class="fab fa-gitlab"></i
+        ></a>
+        <!-- Instagram -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          target="_blank"
+          style="background-color: #ac2bac"
+          href="https://www.instagram.com/manutejaen/"
+          role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <!-- Twitter -->
+        <a
+          class="btn btn-primary btn-floating m-1"
+          target="_blank"
+          style="background-color: #55acee"
+          href="https://twitter.com/manutejaen"
+          role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <a class="text-dark" href="#">Valladolid (España) 2021</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!--SCRIPTS-->
+
+    <!--Leaflet API-->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+    ></script>
+
+    <!-- My JS -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
