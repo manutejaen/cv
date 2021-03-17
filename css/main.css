@@ -9,7 +9,7 @@ body {
 }
 
 #mapid {
-  height: 300px;
+  height: 500px;
   margin: 10px;
 }
 
@@ -42,7 +42,7 @@ body {
 
 /* INTRO */
 .parallax {
-  min-height: 100%;
+  min-height: 500px;
   /* Parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -54,6 +54,8 @@ body {
 #intro {
   height: 100%;
 }
+
+
 
 section {
   margin: 125px 10px;
@@ -117,6 +119,9 @@ section {
   margin-right: 5px;
 }
 
+
+
+
 /* Height for devices larger than 992px */
 @media (min-width: 992px) {
   #intro {
@@ -128,37 +133,57 @@ section {
     font-size: large;
   }
 
-
   
-#mapid {
-  height: 500px;
-  margin: 10px;
+section {
+  margin: 250px 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-  section {
-    margin: 250px 20px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.card {
+  margin-top: 50px;
+  min-height: 700px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
 
-  .card {
-    margin-top: 50px;
-    min-height: 700px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-  }
+.card-body {
+  padding: 50px;
+}
 
-  .card-body {
-    padding: 50px;
-  }
+.card:hover {
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+}
 
-  .card:hover {
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
-  }
+.animate-bottom {
+  position: relative;
+  animation: animatebottom 1s;
+}
 
-  .animate-bottom {
-    position: relative;
-    animation: animatebottom 1s;
+@keyframes animatebottom {
+  from {
+    bottom: -400px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
   }
 }
+
+#experiencia .card {
+  margin: 5px;
+  min-height: 10px;
+  font-size: 12px;
+}
+
+#estudios .card {
+  margin: 5px;
+  min-height: 10px;
+  font-size: 12px;
+}
+
+}
+
+
